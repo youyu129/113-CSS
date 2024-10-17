@@ -75,6 +75,26 @@
             clear: both;
         }
 
+        /* 後代選擇器 */
+        /* nav裡面所有的p */
+        nav p {
+            color: blue;
+        }
+
+        /* 子代選擇器 */
+        /* nav下一層的p */
+        nav>p {
+            color: red;
+        }
+
+        ul>li {
+            color: blue;
+        }
+
+        .menu>.list-item {
+            color: red;
+        }
+
         /* display:flxe 彈性盒：目前主流的排版方式*/
     </style>
 </head>
@@ -110,6 +130,30 @@
 
     <h2>對元素(標籤)設定 id，用於程式</h2>
     <button id="button">按鈕<button>
+
+            <h1>後代選擇器與子代選擇器</h1>
+            <nav>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </nav>
+            <!-- ul>li*5 -->
+            <ul class="menu">
+                <li class="list-item">item</li>
+                <li class="list-item">item</li>
+                <li class="list-item">item</li>
+                <li class="list-item">item</li>
+                <li class="list-item">item</li>
+            </ul>
+
+            <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+            </ul>
             <script>
 
                 const btn = document.getElementById('btn')// 用程式取得id
@@ -119,6 +163,8 @@
                 }
 
             </script>
+
+
 
 </body>
 
