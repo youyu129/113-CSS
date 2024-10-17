@@ -9,8 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pangolin&display=swap"
         rel="stylesheet">
+    :root {
 
+    }
     <style>
+        :root {
+            font-size: 16px;
+        }
+
         body {
             /* 對整份文件做字型的設定(全域) */
             font-family: "Pangolin", cursive;
@@ -51,30 +57,63 @@
             /* 行高，可以設定單位值，也可以設定倍數(無單位)*/
             line-height: 50px;
             line-height: 2;
-
         }
+
+        .text-shadow {
+            font-size: 100px;
+            /* 水平位移(+為右，-為左)、垂直位移(+為下，-為上)，模糊半徑、顏色 */
+            /* 多重陰影，組跟組織間用逗點隔開 */
+            text-shadow:
+                10px 20px 5px rgba(197, 123, 123, 0.5),
+                -100px -100px 13px rgba(159, 138, 228, 0.5);
+        }
+
+        /* CSS generator 產生器，可以先在產生器知道外觀長什麼樣子，看了舒服就複製貼上 */
     </style>
 </head>
 
 <body>
-    <h1>1.font 樣式設定</h1>
+    <h2>1.font 樣式設定</h2>
     <div class="font-style">
         星期四
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem ex, earum odio in culpa animi quia quis
         consectetur rerum fugit?
     </div>
 
-    <h1>2.google font</h1>
+    <h2>2.google font</h2>
     <div class="google-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto minima deserunt iusto
         esse natus dignissimos molestias! Aperiam ducimus magni voluptate!</div>
 
 
-    <h1>3.text 樣式設定</h1>
+    <h2>3.text 樣式設定</h2>
     <p class="text-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere officia ducimus, tempore saepe
         ipsam laudantium porro fugit nesciunt distinctio corporis tempora modi, adipisci odit, perferendis dignissimos!
         Esse voluptatibus nihil magnam?</p>
 
+    <h2>4.文字陰影</h2>
+    <p class="text-shadow">PHP is the best !</p>
 
+    <h2>5.rem 與 em 差異</h2>
+    <h3>rem</h3>
+    <p>為 root 預設 font-size 的倍數，預設為 16px</p>
+    <p>:root選擇器，指的是根元素 html</p>
+    <div style="font-size: 1rem;">
+        font1
+        <div style="font-size: 2rem;">
+            font2
+            <div style="font-size: 3rem;">font3</div>
+        </div>
+    </div>
+    <h3>em</h3>
+    <p>可能為父曾或祖先層 font-size 倍數</p>
+    <p>父層若有設定文字尺寸以它為準，沒有會繼續往外找</p>
+    <div style="font-size: 1em;">
+        font1
+        <div style="font-size: 2em;">
+            font2
+            <div style="font-size: 3em;">font3</div>
+        </div>
+    </div>
 </body>
 
 </html>
