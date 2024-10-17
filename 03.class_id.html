@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        class的寫法
+        1. .class-name
+        2. 命名不可以用數字開頭，.123abc是不合法的，.abc123是合法的
+        3. 有區分大小寫，.mycolor 與 .myColor 是不同的
+        4. 可以用中文命名，但不建議
+         */
+        .mycolor {
+            color: deepskyblue;
+
+        }
+
+        /* 畫一個相同寬高的盒子，但是背景顏色不同 */
+        .box {
+            width: 300px;
+            height: 300px;
+        }
+
+        .bg-color1 {
+            background-color: lightgreen;
+        }
+
+        .bg-color2 {
+            background-color: lightcoral;
+        }
+
+        .bg-color3 {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- class 與 id 選擇器 -->
+    <h1>CSS 的選擇器</h1>
+    <p>CSS 有非常多選擇器，幫助我們在撰寫樣式時，依照該情境選擇到我們要的目標</p>
+
+    <h1 class="mycolor">class 選擇器</h1>
+    <p class="mycolor">特性：具有重複使用的特性，是使用率最高的選擇器</p>
+
+    <p>特性2:</p>
+    <p>抽離相同的屬性，寫成class重複使用，再對不一樣的屬性定義 class</p>
+    <!-- emmet 打法 .box -->
+    <div class="box bg-color1"></div>
+    <br>
+    <div class="box bg-color2"></div>
+    <br>
+    <div class="box bg-color3"></div>
+
+</body>
+
+</html>

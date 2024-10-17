@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本設定</title>
+    <!-- 第二種：使用link，適合用於開發網站 -->
+    <link rel="stylesheet" href="./style1.css">
+    <!-- 第一種：style標籤樣式，該文件的專屬樣式，自己練習時使用 -->
+    <style>
+        /* 
+        標籤選擇器{
+            屬性：值;    
+            color:red;    
+         } 
+            */
+        h1 {
+            color: red;
+            background-color: yellow;
+        }
+
+        p {
+            font-size: 30px;
+
+        }
+
+        /* 群組選擇器 */
+        /* h1的顏色被覆蓋了，由紅色變成藍色 */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 第三種方式 行內樣式(inlinestyle)，標籤的專屬樣式，正常來說優先等級最高 -->
+    <h1 style="color: pink;">title1</h1>
+    <!-- lorem 假字 ，lorem100 產生100個假字-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste voluptatibus natus dolorem porro libero
+        eveniet nobis ipsa, repudiandae quisquam, unde, reiciendis laboriosam veniam quos et nostrum odit voluptas.
+        Quaerat!</p>
+
+    <h1>
+        title2</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste voluptatibus natus dolorem porro
+        libero eveniet nobis ipsa, repudiandae quisquam, unde, reiciendis laboriosam veniam quos et nostrum odit
+        voluptas. Quaerat!</p>
+
+    <h1>
+        title3</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam iste voluptatibus natus dolorem
+        porro libero eveniet nobis ipsa, repudiandae quisquam, unde, reiciendis laboriosam veniam quos
+        et nostrum odit voluptas. Quaerat!</p>
+
+    <hr>
+
+    <h1>Hello World</h1>
+    <h2>Hello World</h2>
+    <h3>Hello World</h3>
+    <h4>Hello World</h4>
+    <h5>Hello World</h5>
+    <h6>Hello World</h6>
+
+
+</body>
+
+</html>
