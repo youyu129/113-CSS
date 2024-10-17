@@ -35,6 +35,47 @@
         .bg-color3 {
             background-color: lightskyblue;
         }
+
+        #main {
+            /* 寬 */
+            width: 1024px;
+            /* 高 */
+            height: 768px;
+            /* 邊框 */
+            border: 1px solid #000;
+        }
+
+        #header {
+            width: 1024px;
+            height: 100px;
+            background: lightblue;
+        }
+
+        #left {
+            width: 100px;
+            height: 568px;
+            background: lightgreen;
+            /* 浮動左側 先忽略 */
+            float: left;
+        }
+
+        #right {
+            width: 924px;
+            height: 568px;
+            background: lightcoral;
+            /* 浮動右側 先忽略 */
+            float: right;
+        }
+
+        #footer {
+            width: 1024px;
+            height: 100px;
+            background: lemonchiffon;
+            /* 清除浮動 先忽略 */
+            clear: both;
+        }
+
+        /* display:flxe 彈性盒：目前主流的排版方式*/
     </style>
 </head>
 
@@ -54,6 +95,30 @@
     <div class="box bg-color2"></div>
     <br>
     <div class="box bg-color3"></div>
+
+    <h1>id 選擇器</h1>
+    <p>一份文件裡面，只允許一個獨一無二的 id，就像身分證，用來作區塊的劃分</p>
+    <p>對元素(標籤)設定 id，可以用程式快速取得它</p>
+
+    <h2>網頁區塊名稱會用id 來命名</h2>
+    <div id="main">
+        <div id="header"></div>
+        <div id="left"></div>
+        <div id="right"></div>
+        <div id="footer"></div>
+    </div>
+
+    <h2>對元素(標籤)設定 id，用於程式</h2>
+    <button id="button">按鈕<button>
+            <script>
+
+                const btn = document.getElementById('btn')// 用程式取得id
+                //讓按鈕被點擊時，跳出視窗
+                btn.onclick = function () {
+                    alert('Hello World')
+                }
+
+            </script>
 
 </body>
 
