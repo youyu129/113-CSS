@@ -23,21 +23,69 @@
             padding-right   右邊
              */
             padding: 10px 20px 30px 40px;
-            margin: auto 0 10px auto;
-            /* margin 左右設為 auto 可以置中 */
+            margin: auto 0 20px auto;
+            /* margin 
+            左右設為 auto 可以置中
+            左邊設為 auto 可以靠右
+            */
+
+            /* 同時設定四個邊 */
+            border: 10px dashed black;
+            /* 單獨設定一邊的寬度 */
+            border-top-width: 1px;
+            /* 單獨設定一邊 */
+            border-bottom: 10px solid black;
+
+            /* 外框，不占大小，位置在 border 以外 */
+            outline: 5px solid red;
+            /* 外框和 border 的間距 */
+            outline-offset: 5px;
+            text-align: justify;
+            /* 
+            box-sizing 控制寬高設定的範圍
+            centent-box 只包含內容區(預設)
+            border-box 包含內容、padding、邊框
+             */
+            box-sizing: content-box;
+
         }
 
         #div2 {
             width: 300px;
             height: 300px;
             background: skyblue;
+
+            /* overflow 東西超出內容區時的處理方式 
+            auto    自動
+            visible 看得到
+            hidden  隱藏
+            overflow-x、overflow-y 分別設定
+            
+            */
+            overflow: auto;
         }
     </style>
 </head>
 
 <body>
     <div id="div">Lorem ipsum dolor sit amet consectetur. ipsum dolor</div>
-    <div id="div2">Lorem ipsum dolor sit amet, consectetur adipisicing</div>
+    <div id="div2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, perferendis odit tenetur sed quaerat
+        molestiae quidem inventore impedit veritatis totam cum. Quae sit enim et ea praesentium vero rem non magnam in
+        minima, consectetur aliquam temporibus beatae quaerat aperiam neque dolor exercitationem delectus nam aliquid
+        sapiente dicta esse veniam? Corrupti laboriosam animi odit ipsam sed, voluptates consequatur, iusto at,
+        veritatis sit sint repellendus debitis obcaecati quae dolor alias amet. Ex, illo provident tempore cumque esse
+        , sit
+        similique itaque. Corrupti omnis, ullam deleniti minus laudantium iste ex molestiae magni nisi fugit cupiditate,
+        praesentium reprehenderit modi beatae impedit architecto exercitation
+        inventore natus animi accusamus maxime ipsam doloremque officiis possimus impedit ducimus voluptates fugit eos
+        asperiores, explicabo debitis alias nemo aut! Qui, deleniti at quisquam quos dolorum excepturi quas rerum
+        numquam corporis aliquid sint placeat mollitia sequi reiciendis praesentium ratione repellendus corrupti laborum
+        vero officiis inventore magni, doloribus ea! Magnam illo iste pariatur. Exercitationem, nam recusandae. Quod,
+        velit perspiciatis libero soluta totam ullam architecto incidunt. Sunt asperiores mollitia hic nostrum autem
+        fugiat! Sint, deserunt eveniet quod beatae amet nesciunt incidunt ad dolor saepe corporis nisi voluptates
+        officiis laborum, neque quas explicabo dolorum, dolorem earum recusae dolores ducimus!Lorem ipsum dolor sit
+        amet, consectetur adipisicing
+    </div>
 </body>
 
 </html>
