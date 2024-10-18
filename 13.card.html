@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .card {
+            width: 300px;
+            border: 1px solid rgb(209, 209, 209);
+            padding: 10px;
+            box-sizing: border-box;
+            position: relative;
+            margin: 100px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 10px gray;
+        }
+
+        .card-ribbon {
+            position: absolute;
+            top: -19px;
+            left: -16px;
+        }
+
+        .card-img {
+            width: 100%;
+        }
+
+        .fonthead {
+            text-align: center;
+            font-family: "Kanit", sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            color: rgb(91, 87, 87);
+        }
+
+        .fontmoney {
+            text-align: center;
+            font-family: "Kanit", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            color: rgb(106, 101, 101);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="./ribbon.png" class="card-ribbon" alt="">
+        <img src="./phone.jpg" class="card-img" alt="">
+        <p class="fonthead">Nothing Phone (2)</p>
+        <p class="fontmoney">$15900</p>
+    </div>
+</body>
+
+</html>
