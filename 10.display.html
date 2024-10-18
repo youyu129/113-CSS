@@ -21,7 +21,7 @@
             sub         下標
             */
             /* 行內、表格的內容對齊 */
-            vertical-align: top;
+            vertical-align: middle;
         }
 
         span {
@@ -32,13 +32,41 @@
         p {
             line-height: 3em;
         }
+
+        .inline-block {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            /*
+            display 元素的顯示方式
+            none 不顯示
+            inline-block; 外在排列和 inline 相同，內部排列和 block 相同 
+            */
+            display: inline-block;
+            text-align: center;
+        }
+
+        /* class 是 inline-block 但不是第一個 */
+        .inline-block:not(:first-child) {
+            margin-left: -4px;
+        }
     </style>
 </head>
 
 <body>
     <!-- <a href="http://x.com">x</a> -->
-    <span>AAgaa</span>
-    <img src="https://picsum.photos/16/16" alt="">
+    <p>
+        <span>AAgaa</span>
+        <img src="https://picsum.photos/16/16" alt="">
+    </p>
+    <div style="height: 30px;line-height: 30px;background: gray;">
+        aaa
+    </div>
+    <div>
+        <div class="inline-block">inline-block</div>
+        <div class="inline-block">inline-block</div>
+        <div class="inline-block">inline-block</div>
+    </div>
 </body>
 
 </html>
